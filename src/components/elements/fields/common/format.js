@@ -1,0 +1,1 @@
+export const format = (formatter, normalizer) => (value = '') => formatter(normalizer ? normalizer(value) : value);

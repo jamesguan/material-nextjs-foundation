@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "React": "writable",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      "indent": [2, 2],
+      "react/react-in-jsx-scope": "off",
+      "semi": [2, "always"]
+    }
+}
